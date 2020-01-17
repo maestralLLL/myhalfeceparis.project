@@ -13,12 +13,11 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.ImageIcon;
+import java.awt.SystemColor;
 
 public class gui {
 
 	private JFrame frame;
-	private JTextField txtIdentifiant;
-	private JTextField txtMotDePasse;
 
 	/**
 	 * Launch the application.
@@ -57,62 +56,68 @@ public class gui {
 		panel.setLayout(null);
 		
 		JButton btnDressing = new JButton("DRESSING");
+		btnDressing.setForeground(SystemColor.controlDkShadow);
 		btnDressing.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
 		btnDressing.setBounds(327, 311, 439, 32);
 		panel.add(btnDressing);
 		
 		JButton btnTendances = new JButton("TENDANCES");
+		btnTendances.setForeground(SystemColor.controlDkShadow);
 		btnTendances.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
 		btnTendances.setBounds(327, 362, 439, 32);
 		panel.add(btnTendances);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(new Color(100, 149, 237));
+		panel_1.setBackground(SystemColor.controlDkShadow);
 		panel_1.setBounds(0, 0, 159, 419);
 		panel.add(panel_1);
 		panel_1.setLayout(null);
 		
-		txtIdentifiant = new JTextField();
-		txtIdentifiant.setFont(new Font("Tahoma", Font.PLAIN, 10));
-		txtIdentifiant.setBounds(32, 105, 96, 19);
-		panel_1.add(txtIdentifiant);
-		txtIdentifiant.setText("Identifiant");
-		txtIdentifiant.setColumns(10);
+		JLabel lblName = new JLabel("Username\r\n");
+		lblName.setFont(new Font("Tempus Sans ITC", Font.ITALIC, 19));
+		lblName.setForeground(SystemColor.textHighlightText);
+		lblName.setBounds(38, 127, 87, 17);
+		panel_1.add(lblName);
 		
-		txtMotDePasse = new JTextField();
-		txtMotDePasse.setBounds(32, 148, 96, 19);
-		panel_1.add(txtMotDePasse);
-		txtMotDePasse.setText("Mot de passe");
-		txtMotDePasse.setColumns(10);
+		JButton btnSettings = new JButton("Settings");
+		btnSettings.setBounds(38, 355, 85, 21);
+		panel_1.add(btnSettings);
 		
-		JButton btnValider = new JButton("Valider");
-		btnValider.setFont(new Font("Times New Roman", Font.PLAIN, 10));
-		btnValider.setBounds(32, 211, 85, 21);
-		panel_1.add(btnValider);
+		JLabel lblPhoto = new JLabel("Profil's");
+		lblPhoto.setBounds(50, 66, 56, 17);
+		panel_1.add(lblPhoto);
+		
+		JLabel lblNewLabel = new JLabel("picture");
+		lblNewLabel.setBounds(50, 81, 46, 13);
+		panel_1.add(lblNewLabel);
 		
 		JPanel panel_2 = new JPanel();
-		panel_2.setBackground(new Color(47, 79, 79));
+		panel_2.setBackground(SystemColor.desktop);
 		panel_2.setBounds(159, 0, 607, 419);
 		panel.add(panel_2);
 		panel_2.setLayout(null);
 		
-		JLabel lblMyHalf = new JLabel("My Half");
-		lblMyHalf.setBounds(229, 27, 174, 68);
+		JLabel lblMyHalf = new JLabel("HALF");
+		lblMyHalf.setBounds(241, 66, 165, 62);
 		panel_2.add(lblMyHalf);
-		lblMyHalf.setForeground(new Color(124, 252, 0));
-		lblMyHalf.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 51));
+		lblMyHalf.setForeground(Color.WHITE);
+		lblMyHalf.setFont(new Font("Tempus Sans ITC", Font.BOLD | Font.ITALIC, 51));
 		
 		JButton btnMeteo = new JButton("METEO");
+		btnMeteo.setBackground(SystemColor.controlDkShadow);
+		btnMeteo.setForeground(SystemColor.controlDkShadow);
 		btnMeteo.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
 		btnMeteo.setBounds(169, 148, 438, 36);
 		panel_2.add(btnMeteo);
 		
 		JButton btnCalendrier = new JButton("CALENDRIER");
+		btnCalendrier.setForeground(SystemColor.controlDkShadow);
 		btnCalendrier.setBounds(169, 259, 438, 32);
 		panel_2.add(btnCalendrier);
 		btnCalendrier.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
 		
 		JButton btnProfil = new JButton("PROFIL");
+		btnProfil.setForeground(SystemColor.controlDkShadow);
 		btnProfil.setBounds(169, 207, 439, 30);
 		panel_2.add(btnProfil);
 		btnProfil.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
