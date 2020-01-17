@@ -119,7 +119,7 @@ public class weather {
 		JLabel lblWensday = new JLabel("Wednesday");
 		lblWensday.setForeground(Color.WHITE);
 		lblWensday.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 11));
-		lblWensday.setBounds(205, 120, 46, 13);
+		lblWensday.setBounds(195, 120, 62, 13);
 		panel.add(lblWensday);
 		
 		JLabel lblThursday = new JLabel("Thursday");

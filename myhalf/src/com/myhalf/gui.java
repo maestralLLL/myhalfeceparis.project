@@ -14,8 +14,11 @@ import javax.swing.JButton;
 import java.awt.Font;
 import javax.swing.ImageIcon;
 import java.awt.SystemColor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class gui {
+public class gui
+{
 
 	private JFrame frame;
 
@@ -48,6 +51,7 @@ public class gui {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 780, 456);
+		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
@@ -103,13 +107,6 @@ public class gui {
 		lblMyHalf.setForeground(Color.WHITE);
 		lblMyHalf.setFont(new Font("Tempus Sans ITC", Font.BOLD | Font.ITALIC, 51));
 		
-		JButton btnMeteo = new JButton("METEO");
-		btnMeteo.setBackground(SystemColor.controlDkShadow);
-		btnMeteo.setForeground(SystemColor.controlDkShadow);
-		btnMeteo.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
-		btnMeteo.setBounds(169, 148, 438, 36);
-		panel_2.add(btnMeteo);
-		
 		JButton btnCalendrier = new JButton("CALENDRIER");
 		btnCalendrier.setForeground(SystemColor.controlDkShadow);
 		btnCalendrier.setBounds(169, 259, 438, 32);
@@ -118,8 +115,24 @@ public class gui {
 		
 		JButton btnProfil = new JButton("PROFIL");
 		btnProfil.setForeground(SystemColor.controlDkShadow);
-		btnProfil.setBounds(169, 207, 439, 30);
-		panel_2.add(btnProfil);
 		btnProfil.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
+		btnProfil.setBounds(169, 203, 438, 32);
+		panel_2.add(btnProfil);
+		
+		JButton btnMeteo = new JButton("METEO");
+		btnMeteo.setForeground(SystemColor.controlDkShadow);
+		btnMeteo.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
+		btnMeteo.setBounds(169, 150, 438, 32);
+		panel_2.add(btnMeteo);
+		
+		btnProfil.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				ChangetheProfil nc=new ChangetheProfil();
+			}
+		});
+		
 	}
 }
