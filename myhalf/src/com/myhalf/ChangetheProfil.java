@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 
 public class ChangetheProfil{
 
-	private JFrame frame;
+	JFrame frame;
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
@@ -25,7 +25,6 @@ public class ChangetheProfil{
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		//ca ne va pas dans cette boucle
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

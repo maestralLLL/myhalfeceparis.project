@@ -120,14 +120,18 @@ public class gui
 		
 		btnProfil.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ChangetheProfil nc=new ChangetheProfil();
+				try {
+					ChangetheProfil wind = new ChangetheProfil();
+					wind.frame.setVisible(true);
+				} catch (Exception e2) {
+					e2.printStackTrace();
+				}
 			}
 		});
 		
 		JButton btnMeteo = new JButton("METEO");
 		btnMeteo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//weather nc=new weather();
 				try {
 					weather wind = new weather();
 					wind.frame.setVisible(true);
