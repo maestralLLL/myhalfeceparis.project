@@ -119,20 +119,22 @@ public class gui
 		btnProfil.setBounds(169, 203, 438, 32);
 		panel_2.add(btnProfil);
 		
+		btnProfil.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ChangetheProfil nc=new ChangetheProfil();
+			}
+		});
+		
 		JButton btnMeteo = new JButton("METEO");
+		btnMeteo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				weather nc=new weather();
+			}
+		});
 		btnMeteo.setForeground(SystemColor.controlDkShadow);
 		btnMeteo.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
 		btnMeteo.setBounds(169, 150, 438, 32);
 		panel_2.add(btnMeteo);
-		
-		btnProfil.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				ChangetheProfil nc=new ChangetheProfil();
-			}
-		});
 		
 	}
 }
