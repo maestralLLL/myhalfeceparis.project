@@ -10,7 +10,7 @@ import java.awt.Font;
 
 public class weather {
 
-	private JFrame frame;
+	JFrame frame;
 
 	/**
 	 * Launch the application.

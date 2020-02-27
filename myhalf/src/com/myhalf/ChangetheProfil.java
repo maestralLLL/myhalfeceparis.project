@@ -1,5 +1,6 @@
 package com.myhalf;
 
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -8,7 +9,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
 
-public class ChangetheProfil {
+public class ChangetheProfil{
 
 	private JFrame frame;
 	private JTextField textField;
@@ -24,6 +25,7 @@ public class ChangetheProfil {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		//ca ne va pas dans cette boucle
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -35,7 +37,6 @@ public class ChangetheProfil {
 			}
 		});
 	}
-
 	/**
 	 * Create the application.
 	 */
@@ -44,7 +45,7 @@ public class ChangetheProfil {
 	}
 
 	/**
-	 * Initialize the contents of the frame.
+	 * Initializne the contents of the frame.
 	 */
 	private void initialize() {
 		frame = new JFrame();

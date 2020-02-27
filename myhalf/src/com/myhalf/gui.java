@@ -37,7 +37,6 @@ public class gui
 			}
 		});
 	}
-
 	/**
 	 * Create the application.
 	 */
@@ -128,7 +127,13 @@ public class gui
 		JButton btnMeteo = new JButton("METEO");
 		btnMeteo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				weather nc=new weather();
+				//weather nc=new weather();
+				try {
+					weather wind = new weather();
+					wind.frame.setVisible(true);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
 			}
 		});
 		btnMeteo.setForeground(SystemColor.controlDkShadow);
