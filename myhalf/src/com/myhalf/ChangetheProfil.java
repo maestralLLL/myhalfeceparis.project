@@ -20,22 +20,6 @@ public class ChangetheProfil{
 	private JTextField textField_5;
 	private JTextField textField_6;
 	private JTextField textField_7;
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					ChangetheProfil window = new ChangetheProfil();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 	/**
 	 * Create the application.
 	 */

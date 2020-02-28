@@ -19,7 +19,6 @@ import java.awt.event.ActionListener;
 
 public class gui
 {
-
 	private JFrame frame;
 
 	/**
@@ -121,6 +120,7 @@ public class gui
 		btnProfil.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
+					frame.dispose();
 					ChangetheProfil wind = new ChangetheProfil();
 					wind.frame.setVisible(true);
 				} catch (Exception e2) {
@@ -133,6 +133,7 @@ public class gui
 		btnMeteo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
+					frame.dispose();
 					weather wind = new weather();
 					wind.frame.setVisible(true);
 				} catch (Exception e1) {

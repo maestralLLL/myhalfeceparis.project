@@ -20,7 +20,7 @@ public class authentificationpass {
 	private JTextField txtEnterHere;
 
 	/**
-	 * Launch the application.
+	 * Launch the application
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -111,8 +111,8 @@ public class authentificationpass {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
+				frame.dispose();
 				gui nc=new gui();
-				
 			}
 		});
 	}
