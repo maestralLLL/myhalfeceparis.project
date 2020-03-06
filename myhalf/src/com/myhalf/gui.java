@@ -94,6 +94,7 @@ public class gui
 		panel_1.add(lblNewLabel);
 		
 		JPanel panel_2 = new JPanel();
+		panel_2.setForeground(Color.PINK);
 		panel_2.setBackground(SystemColor.desktop);
 		panel_2.setBounds(159, 0, 607, 419);
 		panel.add(panel_2);
@@ -130,6 +131,7 @@ public class gui
 		});
 		
 		JButton btnMeteo = new JButton("METEO");
+		btnMeteo.setBackground(Color.RED);
 		btnMeteo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
