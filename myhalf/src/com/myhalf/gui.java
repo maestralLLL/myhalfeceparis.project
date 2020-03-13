@@ -16,6 +16,7 @@ import javax.swing.ImageIcon;
 import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.FlowLayout;
 
 public class gui
 {
@@ -35,6 +36,10 @@ public class gui
 				}
 			}
 		});
+	}
+	
+	public JFrame getFrame() {
+		return frame;
 	}
 	/**
 	 * Create the application.
@@ -73,24 +78,20 @@ public class gui
 		panel_1.setBackground(SystemColor.controlDkShadow);
 		panel_1.setBounds(0, 0, 159, 419);
 		panel.add(panel_1);
-		panel_1.setLayout(null);
+		panel_1.setLayout(new BorderLayout(0, 0));
 		
 		JLabel lblName = new JLabel("Username\r\n");
 		lblName.setFont(new Font("Tempus Sans ITC", Font.ITALIC, 19));
 		lblName.setForeground(SystemColor.textHighlightText);
-		lblName.setBounds(38, 127, 87, 17);
 		panel_1.add(lblName);
 		
 		JButton btnSettings = new JButton("Settings");
-		btnSettings.setBounds(38, 355, 85, 21);
 		panel_1.add(btnSettings);
 		
 		JLabel lblPhoto = new JLabel("Profil's");
-		lblPhoto.setBounds(50, 66, 56, 17);
 		panel_1.add(lblPhoto);
 		
 		JLabel lblNewLabel = new JLabel("picture");
-		lblNewLabel.setBounds(50, 81, 46, 13);
 		panel_1.add(lblNewLabel);
 		
 		JPanel panel_2 = new JPanel();
@@ -98,24 +99,21 @@ public class gui
 		panel_2.setBackground(SystemColor.desktop);
 		panel_2.setBounds(159, 0, 607, 419);
 		panel.add(panel_2);
-		panel_2.setLayout(null);
+		panel_2.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		JLabel lblMyHalf = new JLabel("HALF");
-		lblMyHalf.setBounds(241, 66, 165, 62);
 		panel_2.add(lblMyHalf);
 		lblMyHalf.setForeground(Color.WHITE);
 		lblMyHalf.setFont(new Font("Tempus Sans ITC", Font.BOLD | Font.ITALIC, 51));
 		
 		JButton btnCalendrier = new JButton("CALENDRIER");
 		btnCalendrier.setForeground(SystemColor.controlDkShadow);
-		btnCalendrier.setBounds(169, 259, 438, 32);
 		panel_2.add(btnCalendrier);
 		btnCalendrier.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
 		
 		JButton btnProfil = new JButton("PROFIL");
 		btnProfil.setForeground(SystemColor.controlDkShadow);
 		btnProfil.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
-		btnProfil.setBounds(169, 203, 438, 32);
 		panel_2.add(btnProfil);
 		
 		btnProfil.addActionListener(new ActionListener() {
@@ -145,7 +143,6 @@ public class gui
 		});
 		btnMeteo.setForeground(SystemColor.controlDkShadow);
 		btnMeteo.setFont(new Font("Tempus Sans ITC", Font.PLAIN, 29));
-		btnMeteo.setBounds(169, 150, 438, 32);
 		panel_2.add(btnMeteo);
 		
 	}
